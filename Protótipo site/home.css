@@ -1,0 +1,336 @@
+*{    
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 250px;
+    height: 70px;
+}
+
+.itens{
+    border: 1px solid rgb(226, 223, 223);   
+}
+
+.itens:hover{
+    background-color:#c9c4b6;
+}
+
+.espaco{
+    height: 95px;
+}
+
+.conteudo{
+    display:flex;
+    height: 850px;  
+    align-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buscar{
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 40px;
+    background-color:#f5ead198;
+}
+
+.buscar label{
+    margin: 0 8px;
+}
+
+.buscar h4{
+    margin-left: 50px;
+    color: #ce1836;
+    margin-bottom: 15px;
+}
+
+.buscar .butao{
+    margin-left: 20px;
+    background-color: #ce1836da;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+
+
+.promocao{
+    width: 98%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 40px;
+    background-color: #3abbae;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    
+}
+
+.promocao p{
+    font-size: 20px;
+}
+
+.promocao:hover{
+    color: white;
+}
+
+.primeira{
+    display: flex;
+    height: 32%;
+    width: 100%;
+    justify-content: center;
+}
+
+.primeira >.destinos{
+    width: 60%;   
+    padding: 10px; 
+    height: 100%;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+.destinos img{
+    width: 30%;
+    height: 70%;
+    margin: 10px;
+    
+}   
+
+.primeira >.pacotes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    background-color: #e25441;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.pacotes > h3{
+    color: #e2b025;
+    margin: 10px;
+}
+
+.pacotes > button{
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;    
+}
+
+.pacotes a{
+    text-decoration: none;
+    color: #23998e;
+}
+
+.atendimento{
+    width: 100%;
+    height: 20%;
+    display: flex;   
+    align-items: center;
+    background-color: #e4e4e4;
+}
+
+.atendimento > .texto{
+    width: 50%;
+    margin-left: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto > h4{
+    font-size: 32px;
+    color: #26c5b5;
+}
+
+.texto > a{
+    font-size: 23px;
+    text-decoration: none; 
+    color:black;
+}   
+
+.atendimento > .imagem{
+    width: 60%;
+    float: left;
+}
+  
+
+.formOfertas{
+    border: 2px solid #ce183656;
+    margin: 0 20px;   
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.formOfertas > .esquerda{
+    width: 80%;
+    padding-left: 50px;       
+}
+
+.formOfertas > .direita{
+    padding-left:  100px;
+}
+
+.direita > button{
+    background-color: #ce1836;
+    width: 130px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    color:white;
+}
+
+footer{
+    height: 130px;
+    /* background-color: #f6f0ea ; */
+    font-size: 14px;
+}
+
+footer a{
+    font-size: 16px;
+    text-decoration: none;
+    color:rgb(75, 75, 75);
+   
+}
+
+.redes{
+    background-color:#dfdfdf ;
+   
+}
+
+@media screen and (max-width: 550px) {
+    .conteudo{
+        display:flex;
+        height: 1200px;  
+    }
+
+    .buscar{
+        width: 100%;
+        height: 10%;
+        font-size: 15px;
+        border-radius: 40px;
+        background-color:#f5ead198;
+    }
+    .buscar label{
+        margin-left: 60px;
+    }   
+    
+    .buscar .butao{
+       width: 80px;
+       height: 30px;
+       margin-top: 10px;
+    }
+
+    .promocao{
+        width: 98%;
+        height: 4%;        
+    }
+
+    .promocao p{
+        font-size: 15px;
+    }
+
+    .promocao h4{
+        font-size:18px;
+        margin-left: 10px;
+    }
+
+    .primeira{
+        height: 30%;
+        /* padding-left: 10px; */
+        /* align-items: center; */
+    }
+    
+    .primeira >.destinos{
+        width: 100%;   
+        padding: 3px; 
+        height: 53%;
+        margin-left: 70px;
+        justify-content: center;
+    }
+    
+    .destinos img{
+        width: 30%;
+        height: 70%;
+        margin: 1px;     
+    }   
+    
+    .primeira >.pacotes{
+        width: 80%;
+        font-size: 20px;                 
+    }
+
+    .pacotes > p{
+        margin-left:10px;
+    }
+       
+    .pacotes > button{
+        width: 100px;
+        height: 35px;
+    }
+    
+    .atendimento{
+        height: 25%;
+        flex-wrap: wrap;
+    }
+    
+    .atendimento > .texto{
+        width: 100%;
+        font-size: 18px;
+        margin:auto;
+    }
+    
+    .texto > h4{
+        font-size: 25px;
+    }
+    
+    .texto > a{
+        font-size: 20px;       
+    }   
+    
+    .atendimento > .imagem{
+       width: 10%;
+       margin-left: 50px;            
+    }
+
+    .formOfertas{
+        height: 28%;    
+        flex-wrap: wrap;
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    .formOfertas > .esquerda{
+        width: 100%;
+        padding: 10px; 
+        text-align: center; 
+        size: 40;     
+    }
+    
+    .formOfertas > .direita{
+        padding: 0;
+    }
+   
+    .direita > button{
+        width: 120px;
+        height: 30px;
+    }
+    
+    
+}
