@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar */
+.logo {
+    width: 250px;
+    height: 70px;
+}
+
+.itens {
+    border: 1px solid rgb(226, 223, 223);
+}
+
+.itens:hover {
+    background-color: #ebebeb;
+}
+
+.espaco {
+    height: 90px;
+}
+
+/*pagPromoções */
+.fundoBusca {
+    height: 200px;
+    align-items: center;
+}
+
+.busca {
+    width: 96%;
+    height: 80%;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+
+.busca h4 {
+    font-size: 28px;
+}
+
+.busca button {
+    background-color: #d43953;
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+}
+
+.bannerPromo {
+    background-color: #23998dc2;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+.card-promocao a {
+    text-decoration: none;
+    color: rgb(26, 24, 24);
+    box-shadow: 8px 5px 5px rgba(161, 161, 161, 0.719);
+}
+
+.card-promocao :hover {
+    color:black;
+    box-shadow:
+        1px 1px transparent,
+        2px 2px transparent,
+        3px 3px transparent;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+/* pag Contato */
+
+.texto {
+    text-align: center;
+
+}
+
+.contatos {
+    background-color: #f8f2e4;
+    align-items: center;
+}
+
+.form-group h5 {
+    text-align: center;
+}
+
+form {
+    background-color: #9abdba;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-contato {
+    color: rgb(75, 75, 75);
+    border: 1px solid #fa3419;
+}
+
+.card-contato :hover {
+    background-color: #eeeeee;
+}
+
+.modal {
+    text-align: center;
+    font-size: 20px;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+/* pag Destinos */
+.carousel-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-destinos :hover {
+    box-shadow:
+    1px 1px transparent,
+    2px 2px transparent,
+    3px 3px transparent;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+    color:rgb(26, 24, 24);
+}
+
+.card-destinos a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    box-shadow: 8px 5px 5px rgba(161, 161, 161, 0.719);}
+
+/* rodape */
+footer {
+    height: 130px;
+    font-size: 14px;
+}
+
+footer a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}
+
+.redes {
+    background-color: #dfdfdf;
+}
+
+
+@media screen and (max-width: 550px) {
+    .fundoBusca {
+        height: 500px;
+        margin-bottom: 10px;
+    }
+
+    .busca {
+        width: 98%;
+        height: 94%;
+    }
+}
