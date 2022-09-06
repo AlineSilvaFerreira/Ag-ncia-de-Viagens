@@ -16,7 +16,7 @@
         <!-- Inicio do Navbar -->
         <nav class="navbar bg-white navbar-expand-lg navbar-light border-bottom fixed-top">
             <div class="container-fluid ">
-                <img class="logo" src="imgs/logomarca.png" href="Donna.html">
+                <img class="logo" src="imgs/logomarca.png" href="index.html">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="itens nav-item px-3">
-                            <a class="nav-link fs-5" aria-current="page" href="Donna.html">Home</a>
+                            <a class="nav-link fs-5" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="itens nav-item px-3 bg-light">
                             <a class="nav-link fs-5" href="Destinos.html">Destinos</a>
@@ -49,8 +49,45 @@
 
         </div>
 
+        <!--Buscar -->
+        <div class="container-fluid d-flex justify-content-center fundoBusca"
+            style="background-image: url(imgs/fundo1.jpg);">
+            <div class="row busca g-2 bg-white">
+                <h4>Encontre os melhores valores </h4>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="origem">
+                        <label for="origem">Onde você está?</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="destino">
+                        <label for="destino">Para onde você vai?</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="date" class="form-control" id="dataIda">
+                        <label for="dataIda">Data Ida</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="form-floating">
+                        <input type="date" class="form-control" id="dataVolta">
+                        <label for="dataVolta">Data Volta</label>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <button type="submit" class="btn border  mb-3 fs-5 mt-2">BUSCAR</button>
+                </div>
+            </div>
+        </div>
+        <!--Fim buscar-->
+
+
         <!-- Inicio carrosel -->
-        <div class="carrossel container">
+        <div class="carrossel container mt-3">
             <div id="carouselExampleDark" class="carousel carousel-light slide carousel-fade text"
                 data-bs-ride="carousel">
 
@@ -83,7 +120,7 @@
                     </div>
 
                     <div class="carousel-item">
-                        <img src="imgs/salvador.jpg" class="d-block m-auto img-fluid rounded" alt="...">
+                        <img src="imgs/salvador1.jpg" class="d-block m-auto img-fluid rounded" alt="...">
                         <div class="carousel-caption d-none d-md-block"><a href="#">
                                 <h4> Salvador </h4>
                                 <p> 3 diárias a partir de R$1300.</p>
@@ -107,141 +144,92 @@
 
         <!-- Cards -->
         <div class="container-fluid">
-            <!-- <div class="row m-3 d-flex justify-content-center">
-                <div class="card card-promocao p-0 m-3 col-md-3" style="width: 18rem;">
-                    <a href="#"><img src="imgs/maceio.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-light">
-                            <h4 class="card-title">Maceió</h4>
-                            
-                        </div> 
-                    </a>
+            <div class="row border-top m-1 mt-3">
+                <h3>Nacionais</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 m-1 mb-4">
+                <div class="col">
+                    <div class="card card-destinos">
+                        <a href="#"><img src="imgs/pgalinhas.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Porto de Galinhas</h5>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-        
-                <div class="card card-promocao p-0 m-3" style="width: 18rem;">
-                    <a href="#"><img src="imgs/porto.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-light">
-                            <h4 class="card-title">Porto Alegre</h4>
-                            <p class="card-text text-decoration-line-through">R$ 881,00</p>
-                            <h5 class="card-text">R$ 500,00</h5>
-                            <p class="card-text">- 5 dias <br>- Voo (ida e volta) <br>- Hospedagem <br>- Café da manhã incluso
-                            </p>
-                        </div>
-                    </a>
-                </div>    
+                <div class="col">
+                    <div class="card card-destinos">
+                        <a href="#"><img src="imgs/curitiba.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Curitiba</h5>
 
-                <div class="card card-promocao p-0 m-3" style="width: 18rem;">
-                    <a href="#"><img src="imgs/maragogi.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-light">
-                            <h4 class="card-title">Maragogi</h4>
-                            <p class="card-text text-decoration-line-through">R$ 1000,00</p>
-                            <h5 class="card-text">R$ 790,00</h5>
-                            <p class="card-text">- 5 dias <br>- Voo (ida e volta) <br>- Hospedagem <br>- Café da manhã incluso</p>
-                        </div>
-                    </a>
-                </div>
-        
-                <div class="card card-promocao p-0 m-3" style="width: 18rem;">
-                    <a href="#"><img src="imgs/natal.jpg" class="card-img-top" alt="...">
-                        <div class="card-body bg-light">
-                            <h4 class="card-title">Natal</h4>
-                            <p class="card-text text-decoration-line-through">R$ 1325,00</p>
-                            <h5 class="card-text">R$ 662,50</h5>
-                            <p class="card-text">- 6 dias <br>- Voo (ida e volta) <br>- Hospedagem <br>- Café da manhã incluso</p>
-                        </div>    
-                    </a>
-                </div>
-            </div> -->
-
-            <div class="row border-top m-1 mt-3"> <h3>Nacionais</h3></div>
-            <div class="row row-cols-1 row-cols-md-4 g-4 m-1">
-                <div class="col">
-                    <div class="card">
-                        <img src="imgs/pgalinhas.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Porto de Galinhas</h5>
-                         
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                           
-                        </div>
+                    <div class="card card-destinos">
+                        <a href="#"><img src="imgs/gramado.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Gramado</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
+                    <div class="card card-destinos">
+                        <a href="#"><img src="imgs/rj.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rio de Janeiro</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="row border-top m-1 mt-3"> <h3>Internacionais</h3></div>
-                <div class="row row-cols-1 row-cols-md-4 g-4 m-1">
-                    <div class="col">
-                        <div class="card">
-                            <img src="imgs/ny1.jpeg" class="card-img-top" alt="...">
+            <div class="row border-top m-1 mt-3">
+                <h3>Interacionais</h3>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 m-1 mb-4">
+                <div class="col">
+                    <div class="card card-destinos">
+                        <a href="#"><img src="imgs/honduras.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Nova York</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">Honduras</h5>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="imgs/espanha.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Madrid</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
-            
+                <div class="col">
+                    <div class="card card-destinos">
+                        <a href="#"><img src="imgs/espanha.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Espanha</h5>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-destinos">
+                        <a href="#"><img src="imgs/Lisboa.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lisboa</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-destinos">
+                        <a href="#"><img src="imgs/tailandia.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tailândia</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- Fim cards -->
 
@@ -251,7 +239,7 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="nav d-flex justify-content-center fs-5">
-                            <li class="nav-link mx-3"><a href="Donna.html">Página inicial</a></li>
+                            <li class="nav-link mx-3"><a href="index.html">Página inicial</a></li>
                             <li class="nav-link mx-3"><a href="#">Sobre</a></li>
                             <li class="nav-link mx-3"><a href="Contato.html">Contato</a></li>
                             <li class="nav-link mx-3"><a href="#">Suporte</a></li>
