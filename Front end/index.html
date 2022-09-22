@@ -17,15 +17,29 @@
         <div class="container-fluid ">
             <img class="logo" src="imgs/logomarca.png" href="index.html">
 
+            <a href="login.html"><button class="btn btn-light" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /> </svg>
+                </button>
+            </a>
+                
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    </nav>
+
+    <div class="espaco"></div>
+
+    <nav class="nav nav-item bg-white navbar-expand-lg navbar-light mb-1 border-bottom">
+        <div class="container-fluid ">    
+          
+            <div class=" collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="itens nav-item px-3  bg-light">
+                    <li class="itens nav-item px-3">
                         <a class="nav-link fs-5" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="itens nav-item px-3">
@@ -37,6 +51,7 @@
                     <li class="itens nav-item px-3">
                         <a class="nav-link fs-5" href="Contato.html">Contato</a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -44,14 +59,13 @@
     </nav>
     <!-- Fim do navbar -->
 
-    <div class="espaco"></div>
-
     <div class="container-fluid conteudo">
 
         <!--Buscar -->
-        <div class="container-fluid d-flex justify-content-center fundoBusca" style="background-image: url(imgs/fundo1.jpg);">
+        <div class="container-fluid d-flex justify-content-center fundoBusca"
+            style="background-image: url(imgs/fundo1.jpg);">
             <div class="row busca g-2 bg-white">
-                <h4 >Encontre os melhores valores </h4>
+                <h4>Encontre os melhores valores </h4>
                 <div class="col-md">
                     <div class="form-floating">
                         <input type="text" class="form-control" id="origem">
@@ -82,7 +96,7 @@
             </div>
         </div>
         <!--Fim buscar-->
-       
+
         <!--Bannerzinho promoções-->
         <a class="promocao my-2" href="Promoções.html">
             <h4>Destinos com até 50% de desconto</h4>
@@ -148,11 +162,11 @@
                     </div>
                     <div class="mb-1">
                         <input type="email" class="form-control" id="email" placeholder="seu email" size="50">
-                    </div>        
-                    
-                  </form>
-                  <button type="submit" class="btn btn-secondary">Inscrever</button>
-                </div>
+                    </div>
+
+                </form>
+                <button type="submit" class="btn btn-secondary">Inscrever</button>
+            </div>
         </div>
         <!--Fim form-->
     </div>
@@ -212,7 +226,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>

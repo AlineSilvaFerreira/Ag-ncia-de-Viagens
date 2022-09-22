@@ -2,23 +2,39 @@
     margin: 0;
     padding: 0;
 }
-
+ /*nav*/
 .logo{
-    width: 250px;
-    height: 70px;
+    width: 180px;
+    height: 50px;
 }
 
 .itens{
-    border: 1px solid rgb(226, 223, 223);   
+    margin: 0 20px;
 }
 
 .itens:hover{
-    background-color:#c9c4b6;
+    background-color: #ebebeb;
 }
+/**/
 
 .espaco{
-    height: 89px;
+    height: 68px;
 }
+
+/*pag login*/
+section{
+    background-color: #EED9D4;
+}
+
+.login h2{
+    color: #d43953;
+}
+
+.login button{
+    background-color: #1a889e;
+    border: none;
+}
+/**/
 
 .conteudo{
     display:flex;

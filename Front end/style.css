@@ -3,23 +3,23 @@
     padding: 0;
 }
 
-
-/* navbar */
-.logo {
-    width: 250px;
-    height: 70px;
+ /*nav*/
+ .logo{
+    width: 180px;
+    height: 50px;
 }
 
-.itens {
-    border: 1px solid rgb(226, 223, 223);
+.itens{
+    margin: 0 20px;
 }
 
-.itens:hover {
+.itens:hover{
     background-color: #ebebeb;
 }
+/**/
 
 .espaco {
-    height: 90px;
+    height: 68px;
 }
 
 /*pagPromoções */
@@ -73,11 +73,10 @@
 
 .texto {
     text-align: center;
-
 }
 
 .contatos {
-    background-color: #f8f2e4;
+    background-color: #f0e2de;
     align-items: center;
 }
 
