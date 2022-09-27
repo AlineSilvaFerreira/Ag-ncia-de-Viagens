@@ -6,8 +6,7 @@ Id_voo INTEGER PRIMARY KEY auto_increment,
 Origem VARCHAR(30),
 Destino VARCHAR(30),
 Data_Ida DATETIME,
-Data_Volta DATETIME,
-Valor DECIMAL(5,2)
+Data_Volta DATETIME
 );
 
 CREATE TABLE Hospedagem (
@@ -26,7 +25,6 @@ Id_cliente INTEGER PRIMARY KEY auto_increment,
 Nome VARCHAR(50),
 Telefone VARCHAR(20),
 CPF VARCHAR(20),
-Email VARCHAR(50),
 Estado VARCHAR(20),
 Cidade VARCHAR(30),
 Bairro VARCHAR(30),
@@ -75,7 +73,7 @@ FOREIGN KEY(Id_pacote) REFERENCES Pacote (Id_pacote),
 FOREIGN KEY(Id_reserva) REFERENCES Reserva (Id_reserva)
 );
 
-select * from reserva;
+select * from cliente;
 select * from itens_reserva;
 select * from pacotes;
 select * from usuário;
