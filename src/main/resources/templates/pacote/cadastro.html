@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet"
+		crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"
+		crossorigin="anonymous">
+		
+	<title>Cadastro pacote</title>
+	<link href="../home.css" rel="stylesheet">
+	<link href="../pagina.css" rel="stylesheet">
+
+	<script src="../pagina.js"> </script>
+</head>
+
+<body>
+
+		<!--Início menu lateral -->
+	<div id="body-pd">
+		<header class="cabeca" id="cabeca">
+			<div class="cabeca_toggle"> <i class="bx bx-menu" id="cabeca-toggle"></i> </div>
+			<div class="cabeca_img"> <img src="#" alt=""> </div>
+		</header>
+	</div>
+	<div class="l-navbar" id="nav-bar">
+		<nav class="nav">
+			<div> <a href="#" class="nav_logo"> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+						fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+						<path
+							d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z" />
+					</svg> <span class="nav_logo-name">Donna ADM</span> </a>
+
+				<div class="nav_list"> <a th:href="@{/pacote}" class="nav_link active"> <svg xmlns="http://www.w3.org/2000/svg"
+							width="18" height="18" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+							<path
+								d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+						</svg> <span class="nav_name">Pacotes</span> </a>
+
+					<a th:href="@{/usuario}" class="nav_link"> <i class='bx bx-user nav_icon'></i>
+						<span class="nav_name">Usuários</span> </a>
+
+					<a th:href="@{/cliente}" class="nav_link"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+							fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+							<path
+								d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+						</svg><span class="nav_name">Clientes</span> </a>
+				</div>
+			</div> <a href="login" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
+					class="nav_name">SignOut</span> </a>
+		</nav>
+	</div>
+	<!--Final menu lateral -->
+	
+	<div class="espaco"></div>
+	
+	<div class="main">
+		
+		<!-- Inicio formulário cadastro -->
+		
+		<h3 class="text-center mb-4">Cadastrar novo pacote</h3>
+		
+		<div class="container d-flex justify-content-center flex-wrap">
+		
+			<form method="POST" th:object="${pacote}" style="width: 900px; background-color:rgb(235, 235, 235); padding:15px;">
+
+				<fieldset>
+					<legend>Dados do pacote</legend>
+										
+					<input type="hidden" th:field="*{voo.id}">
+					
+					<div class="row">
+						<div class="form-group mb-3 col-6">
+							<label for="voo.origem" class="form-label">Origem: </label>
+							<input type="text" class="form-control" th:field="*{voo.origem}">
+						</div>
+
+						<div class="form-group mb-3 col-6">
+							<label for="voo.destino" class="form-label">Destino: </label>
+							<input type="text" class="form-control" th:field="*{voo.destino}">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group mb-3 col-6">
+							<label for="voo.dataIda" class="form-label">Data Ida: </label>
+							<input type="date" class="form-control" th:field="*{voo.dataIda}">
+						</div>
+
+						<div class="form-group mb-3 col-6">
+							<label for="voo.dataVolta" class="form-label">Data Volta: </label>
+							<input type="date" class="form-control" th:field="*{voo.dataVolta}">
+						</div>
+					</div>
+					<div class="row g-3">
+						<div class="form-group mb-3 col-6">
+							<label for="valor" class="form-label">Valor:</label>
+							<input type="text" class="form-control" id="valor" th:field="*{valor}">
+						</div>
+
+						<div class="form-group col-6">
+							<label for="desconto" class="form-label">Desconto:</label>
+							<input type="number" class="form-control" id="desconto" th:field="*{desconto}">
+						</div>
+					</div>
+
+					<input type="hidden" th:field="*{hospedagem.id}">
+					<div class="row">
+						<div class="form-group mb-3 col-6">
+							<label for="hospedagem.incluso" class="form-label">Incluso: </label>
+							<input type="text" class="form-control" th:field="*{hospedagem.incluso}">
+						</div>
+
+						<div class="form-group mb-3 col-6">
+							<label for="hospedagem.diarias" class="form-label">Qtd diárias: </label>
+							<input type="number" class="form-control" th:field="*{hospedagem.diarias}">
+						</div>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-outline-secondary">Cadastrar</button>
+					</div>
+				</fieldset>
+			</form>
+			<!-- Fim formulário cadastro -->
+
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
