@@ -12,6 +12,6 @@ Segunda entrega
 - Diagrama de classes UML
 - Classes e CRUD Java
 
-:link: https://donna-agencia-de-viagens.netlify.app
+:link: https://donna-agencia-de-viagens.herokuapp.com/
 
 
