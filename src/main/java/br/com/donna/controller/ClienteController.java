@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -50,10 +51,10 @@ public class ClienteController {
 
 			return modelAndView;
 		}
-
+	
 	    @GetMapping("/{id}/editar")
 	    public ModelAndView editar(@PathVariable int id) {
-	        ModelAndView modelAndView = new ModelAndView("cliente/cadastro");
+	        ModelAndView modelAndView = new ModelAndView("cliente/editar");
 
 	        modelAndView.addObject("cliente", clienteRepository.getOne(id));
 	        modelAndView.addObject("ufs", UF.values());
@@ -68,6 +69,7 @@ public class ClienteController {
 	        return "redirect:/cliente";
 	    }
 
+	 
 	    @GetMapping("/{id}/excluir")
 	    public String excluir(@PathVariable int id) {
 	        clienteRepository.deleteById(id);

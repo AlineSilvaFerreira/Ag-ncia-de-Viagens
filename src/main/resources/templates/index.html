@@ -11,72 +11,60 @@
 	rel="stylesheet">
 </head>
 
-<body class="bg-light">
+<body >
 	
-
-	<!-- Inicio do Navbar -->
-	<nav
-		class="navbar bg-white navbar-expand-lg navbar-light border-bottom fixed-top">
+<!-- Inicio do Navbar -->
+	<nav class="navbar bg-white navbar-expand-lg navbar-light border-bottom fixed-top">
 		<div class="container-fluid ">
-			<a href="/"> <img class="logo"
-				src="../imgs/logomarca.png"></a>
+			<img class="logo" src="../imgs/logomarca.png" href="/">
 
-			<div class="dropstart">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button-secondary" data-bs-toggle="dropdown" aria-expanded="false">
-					<button class="btn btn-light" type="button">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-							fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /> </svg>
-					</button>
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<li><a class="dropdown-item" href="login">Login</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="pacote">Administrador</a></li>
-				</ul>
-			</div>
+			<a href="/login"><button class="btn btn-light" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+						width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+						<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+					</svg>
+				</button>
+			</a>
 
-			<button class="navbar-toggler" type="button"
-				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false"
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 		</div>
-
 	</nav>
 
 	<div class="espaco"></div>
 
-	<nav
-		class="nav nav-item bg-white navbar-expand-lg navbar-light mb-1 border-bottom">
+	<nav class="nav nav-itens navbar-expand-lg navbar-light mb-1 border-bottom">
 		<div class="container-fluid ">
 
-			<div class=" collapse navbar-collapse justify-content-center"
-				id="navbarSupportedContent">
+			<div class=" collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
 				<ul class="navbar-nav">
-					<li class="itens nav-item px-3"><a class="nav-link fs-5"
-						aria-current="page" href="/">Home</a></li>
-					<li class="itens nav-item px-3"><a class="nav-link fs-5"
-						href="destinos">Destinos</a></li>
-					<li class="itens nav-item px-3"><a class="nav-link fs-5"
-						href="promocoes">Promoções</a></li>
-					<li class="itens nav-item px-3"><a class="nav-link fs-5"
-						href="contato">Contato</a></li>
-
+					<li class="itens nav-item px-3 ">
+						<a class="nav-link fs-5" aria-current="page" href="/">Home</a>
+					</li>
+					<li class="itens nav-item px-3">
+						<a class="nav-link fs-5" href="/destinos">Destinos</a>
+					</li>
+					<li class="itens nav-item px-3">
+						<a class="nav-link fs-5" href="/promocoes">Promoções</a>
+					</li>
+					<li class="itens nav-item px-3">
+						<a class="nav-link fs-5" href="/contato">Contato</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 
 	</nav>
+	
 	<!-- Fim do navbar -->
 
 	<div class="container-fluid conteudo">
 
 		<!--Buscar -->
 		<div class="container-fluid d-flex justify-content-center fundoBusca"
-			style="background-image: url(../imgs/fundo1.jpg);">
+			style="background-image: url(../imgs/fundo.jpg);">
 			<div class="row busca g-2 bg-white">
 				<h4>Encontre os melhores valores</h4>
 				<div class="col-md">
@@ -104,14 +92,14 @@
 					</div>
 				</div>
 				<div class="col-md">
-					<button type="submit" class="btn border  mb-3 fs-5 mt-2">BUSCAR</button>
+					<button type="submit" class="btn border mb-3 fs-5 mt-2">BUSCAR</button>
 				</div>
 			</div>
 		</div>
 		<!--Fim buscar-->
 
 		<!--Bannerzinho promoções-->
-		<a class="promocao my-2" href="Promocoes.html">
+		<a class="promocao" href="promocoes">
 			<h4>Destinos com até 50% de desconto</h4>
 
 			<p>
@@ -126,17 +114,17 @@
 		</a>
 		<!--Fim bannerzinho-->
 
-		<div class="row primeira mb-2">
+		<div class="row primeira">
 			<!--Destinos mais buscados-->
 			<div class="destinos">
 				<div>
 					<h3>Destinos mais buscados</h3>
 				</div>
-				<a href="Destinos.html"><img
+				<a href="destinos"><img
 					src="../imgs/Lisboa.jpg"></a> <a
-					href="Destinos.html"><img
+					href="destinos"><img
 					src="../imgs/pgalinhas.jpg"></a> <a
-					href="Destinos.html"><img
+					href="destinos"><img
 					src="../imgs/espanha.jpg"></a>
 			</div>
 			<!--Fim destinos mais buscados-->
@@ -147,7 +135,7 @@
 				<p>Hotel + Aéreo</p>
 				<p>com preços incríveis</p>
 				<button>
-					<a href="Promocoes.html"> Vem ver</a>
+					<a href="promocoes"> Vem ver</a>
 				</button>
 			</div>
 			<!--Fim card-->
@@ -158,7 +146,7 @@
 			<div class="texto">
 				<h4>Central de atendimento</h4>
 				<p>Escolha como deseja falar com a gente.</p>
-				<a href="Contato.html">Acesse agora <svg
+				<a href="contato">Acesse agora <svg
 						xmlns="http://www.w3.org/2000/svg" width="25" height="25"
 						fill="currentColor" class="bi bi-arrow-right-circle"
 						viewBox="0 0 16 16">
@@ -166,7 +154,7 @@
 							d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                     </svg></a>
 			</div>
-			<div class="imagem">
+			<div class="imagem img-fluid">
 				<img src="../imgs/cajuda.png">
 			</div>
 		</div>

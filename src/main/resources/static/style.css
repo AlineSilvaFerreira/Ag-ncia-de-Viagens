@@ -18,7 +18,7 @@
 .itens:hover{
     background-color: #ebebeb;
 }
-/**/
+
 
 .espaco {
     height: 68px;
@@ -56,17 +56,24 @@
 }
 
 .card-promocao a {
-    text-decoration: none;
-    color: rgb(26, 24, 24);
-    box-shadow: 8px 5px 5px rgba(161, 161, 161, 0.719);
+	background-color:rgb(235, 235, 235);
+   
+}
+
+.card-promocao h3 {
+	color:rgb(18, 57, 65);	  
+}
+
+.card-promocao h4 {
+	color:rgb(147, 17, 39);   
 }
 
 .card-promocao :hover {
     color:black;
     box-shadow:
-        1px 1px transparent,
-        2px 2px transparent,
-        3px 3px transparent;
+        1px 1px rgba(161, 161, 161, 0.719),
+        2px 2px rgba(161, 161, 161, 0.719),
+        8px 5px 5px rgba(161, 161, 161, 0.719);
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
 }
@@ -124,11 +131,82 @@ transform: translateX(-3px);
 .card-destinos a {
     text-decoration: none;
     color: rgb(51, 51, 51);
-    box-shadow: 8px 5px 5px rgba(161, 161, 161, 0.719);}
+    box-shadow: 8px 5px 5px rgba(161, 161, 161, 0.719);
+}
+
+/*pag comprar*/
+.rowcomprar{
+	 background-color:rgb(244, 244, 244);
+	 height: 90%;
+	 padding:20px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 
+}
+
+.colcomprar1, .colcomprar{	
+	background-color:white;
+	height: 90%;
+	margin: 0 20px 0 0;	
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.colcomprar1{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.colcomprar1 h3{	
+	margin: 20px;
+	color:#1d5e69;
+	
+}
+
+.colcomprar1 .incluso{
+	width: 98%;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgb(128, 128, 128);
+	border-radius: 10px;	
+	padding: 10px;
+	margin: auto;
+}
+
+.colcomprar h4{
+	color: rgb(190, 27, 3);
+}
+
+
+.colcomprar table{
+	width:100%;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+
+.colcomprar table tr td{
+	font-size: 18px;
+	height: 40px;
+	padding: 5px;
+	margin: 15px 25px 0 0 ;
+	
+}
+
+.colcomprar .btncomprar{
+	
+	background-color:rgb(46, 203, 187);
+}
+.btncomprar:hover{
+	background-color:rgb(128, 255, 255);
+	
+}
 
 /* rodape */
 footer {
-    height: 130px;
+    height: 20%;
     font-size: 14px;
 }
 

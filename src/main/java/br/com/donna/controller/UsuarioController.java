@@ -11,10 +11,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import br.com.donna.model.Cliente;
 import br.com.donna.model.Usuario;
 import br.com.donna.repository.ClienteRepository;
+import br.com.donna.repository.PermissaoRepository;
 import br.com.donna.repository.UsuarioRepository;
+import br.com.donna.utils.SenhaUtils;
 
 @Controller
 @RequestMapping("/usuario")
@@ -25,7 +26,10 @@ public class UsuarioController {
 
 	@Autowired
 	private ClienteRepository clienteRepository;
-
+	
+//	@Autowired
+//	private PermissaoRepository permissaoRepository;
+	
 	@GetMapping
 	public ModelAndView home() {
 		ModelAndView modelAndView = new ModelAndView("usuario/home.html");
@@ -41,32 +45,36 @@ public class UsuarioController {
 
 		modelAndView.addObject("usuario", new Usuario());
 		modelAndView.addObject("cliente", clienteRepository.findAll());
-
+		//modelAndView.addObject("permissao", permissaoRepository.findAll());
+		
 		return modelAndView;
 	}
 
 	@PostMapping("/cadastrar")
-	public ModelAndView cadastrar(Usuario usuario) throws IOException {
-
-		ModelAndView modelAndView = new ModelAndView("redirect:/usuario");
-
+	public String cadastrar(Usuario usuario) throws IOException {
+		String senhaEncriptada = SenhaUtils.encode(usuario.getSenha());
+		
+		usuario.setSenha(senhaEncriptada);
 		usuarioRepository.save(usuario);
 
-		return modelAndView;
+		return "redirect:/usuario";
+		
 	}
-
+	
 	@GetMapping("/{id}/editar")
 	public ModelAndView editar(@PathVariable int id) {
-		ModelAndView modelAndView = new ModelAndView("usuario/cadastro");
+		ModelAndView modelAndView = new ModelAndView("usuario/editar");
 
 		modelAndView.addObject("usuario", usuarioRepository.getOne(id));
 		modelAndView.addObject("cliente", clienteRepository.findAll());
+	//	modelAndView.addObject("permissao", permissaoRepository.findAll());
 
 		return modelAndView;
 	}
 
 	@PostMapping("/{id}/editar")
-	public String salvar(Usuario usuario) {
+	public String editar(Usuario usuario, @PathVariable int id) {
+			    
 		usuarioRepository.save(usuario);
 
 		return "redirect:/usuario";

@@ -18,24 +18,32 @@ public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
 	@Column(nullable = false)
 	private String nome;
+	
 	@Column(nullable = false)
 	private String telefone;
+	
 	@Column(nullable = false, unique = true)
 	private String cpf;	
 	
 	@Column(nullable = false, length = 2)
     @Enumerated(EnumType.STRING)
 	private UF estado;
+	
 	@Column(nullable = false)
 	private String cidade;
+	
 	@Column(nullable = false)
 	private String bairro;
+	
 	@Column(nullable = false)
 	private String rua;
+	
 	@Column(nullable = false)
 	private int numero;
+	
 	@Column(nullable = false)
 	private String cep;
 	

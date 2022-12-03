@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet"
+		crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"
+		crossorigin="anonymous">
+		
+	<title>Cadastro usuário</title>
+	<link href="../home.css" rel="stylesheet">
+	<link href="../pagina.css" rel="stylesheet">
+
+	<script src="../pagina.js"> </script>
+</head>
+
+<body>
+
+	
+	<div class="espaco"></div>
+	
+	<div class="main mt-5">
+		
+		<!-- Inicio formulário cadastro -->
+		
+		<h3 class="text-center mb-4" style="color: #1a889e;">Editar usuario <p th:text=${usuario.cliente.nome}></p></h3>
+		
+		<div class="container d-flex justify-content-center flex-wrap">
+		
+			<form method="POST" th:object="${usuario}" style="width: 600px; background-color:rgb(235, 235, 235); padding:15px;">
+
+				<fieldset>
+					<legend>Dados do usuário</legend>
+										
+					<div class="row mb-2">
+						<div class="form-group col-7">
+							<label  class="form-label">Id do cliente</label>
+							<select th:field="*{cliente}" class="form-control">
+							<option th:each="cliente : ${cliente}" th:text="${cliente.id}"
+							th:value="${cliente.id}"></option>
+							</select>
+						</div>
+						<div class="form-group col-4 mt-4">
+								<a th:href="@{/cliente}" style="text-decoration: none; color:#1a889e;">Lista de clientes</a>
+								</div>
+					</div>
+					
+						
+					<div class="row g-3  mt-2" >
+						<div class="form-group col-12">
+							<label for="email" class="form-label">Email:</label>
+							<input type="text" class="form-control" id="email" th:field="*{email}">
+						</div>
+					</div>
+					
+					<div class="row g-3 mt-2" >
+						<div class="form-group col-12 ">
+							<label for="senha" class="form-label">Senha:</label>
+							<input type="password" class="form-control" id="senha" th:field="*{senha}">
+						</div>
+					</div>
+
+					
+					<div class="col-12 d-flex justify-content-center mt-4">
+						<button type="submit" class="btn btn-outline-info me-2"> <i class='bx bx-save'> Cadastrar </i></button>
+						<a th:href="@{/usuario}" class="btn btn-outline-secondary ">Cancelar</a>
+					</div>
+				</fieldset>
+			</form>
+			<!-- Fim formulário cadastro -->
+
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -15,7 +15,6 @@
 		crossorigin="anonymous">
 
 	<title>Cadastro cliente</title>
-	<link href="../home.css" rel="stylesheet">
 	<link href="../pagina.css" rel="stylesheet">
 
 	<script src="../pagina.js"> </script>
@@ -31,7 +30,7 @@
 	</div>
 	<div class="l-navbar" id="nav-bar">
 		<nav class="nav">
-			<div> <a href="#" class="nav_logo"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+			<div> <a href="/" class="nav_logo"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
 						fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
 						<path
 							d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z" />
@@ -43,25 +42,27 @@
 								d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
 						</svg> <span class="nav_name">Pacotes</span> </a>
 
-					<a th:href="@{/usuario}" class="nav_link"> <i class='bx bx-user nav_icon'></i>
-						<span class="nav_name">Usuários</span> </a>
-
 					<a th:href="@{/cliente}" class="nav_link active"><svg xmlns="http://www.w3.org/2000/svg" width="16"
 							height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
 							<path
 								d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
 						</svg><span class="nav_name">Clientes</span> </a>
+
+					<a th:href="@{/usuario}" class="nav_link"> <i class='bx bx-user nav_icon'></i>
+						<span class="nav_name">Usuários</span> </a>
+
 				</div>
 			</div> <a href="login" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span
 					class="nav_name">SignOut</span> </a>
 		</nav>
 	</div>
 	<!--Final menu lateral -->
-	<div class="espaco"></div>
+
+	<div style="height: 70px;"></div>
 
 	<main class="container">
 
-		<h3 class="text-center mb-4">Cadastrar novo cliente</h3>
+		<h3 class="text-center mb-5" style="color: #1a889e;">Cadastrar novo cliente</h3>
 		<div class="container d-flex justify-content-center flex-wrap mb-5 ">
 
 			<form method="POST" th:object="${cliente}" enctype="multipart/form-data"
@@ -84,9 +85,11 @@
 
 						<div class="col-md-7">
 							<label for="cpf" class="form-label">CPF:</label>
-							<input type="text" class="form-control" id="cpf" th:field="*{cpf}">
+							<input type="text" class="form-control" id="cpf" placeholder="000.000.000-0"
+								th:field="*{cpf}">
 						</div>
 
+						<legend>Endereço</legend>
 						<div class="col-md-6">
 							<label for="estado" class="form-label">Estado:</label>
 							<select id="estado" class="form-select" th:field="*{estado}">
@@ -103,7 +106,7 @@
 
 						<div class="col-md-4">
 							<label for="cep" class="form-label">CEP:</label>
-							<input type="text" class="form-control" id="cep" th:field="*{cep}">
+							<input type="text" class="form-control" id="cep" placeholder="22222-222" th:field="*{cep}">
 						</div>
 
 						<div class="col-md-8">
@@ -123,8 +126,9 @@
 						</div>
 
 
-						<div class="col-12">
-							<button type="submit" class="btn btn-outline-secondary">Salvar</button>
+						<div class="col-12 d-flex justify-content-center">
+							<button type="submit" class="btn btn-outline-info"> <i class='bx bx-save'>
+									Salvar</i></button>
 						</div>
 					</div>
 				</fieldset>

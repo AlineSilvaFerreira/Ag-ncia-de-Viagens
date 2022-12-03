@@ -14,67 +14,54 @@
 
 <body>
     <div class="container-fluid max-width bg-white">
-        <!-- Inicio do Navbar -->
-        <nav class="navbar bg-white navbar-expand-lg navbar-light border-bottom fixed-top">
-            <div class="container-fluid ">
-               <a href="/"> <img class="logo" src="../imgs/logomarca.png"></a>
+     <!-- Inicio do Navbar -->
+	<nav class="navbar bg-white navbar-expand-lg navbar-light border-bottom fixed-top">
+		<div class="container-fluid ">
+			<img class="logo" src="../imgs/logomarca.png" href="/">
 
-                <div class="dropstart">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button-dark" data-bs-toggle="dropdown"
-					aria-expanded="false">
-					<button class="btn btn-light" type="button">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-							fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path
-								d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" /> </svg>
-					</button>
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<li><a class="dropdown-item" href="login.html">Login</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="../MenuAdm.html">Administrador</a></li>
+			<a href="/login"><button class="btn btn-light" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+						width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+						<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+					</svg>
+				</button>
+			</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+	</nav>
+
+	<div class="espaco"></div>
+
+	<nav class="nav nav-itens navbar-expand-lg navbar-light mb-1 border-bottom">
+		<div class="container-fluid ">
+
+			<div class=" collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="itens nav-item px-3 ">
+						<a class="nav-link fs-5" aria-current="page" href="/">Home</a>
+					</li>
+					<li class="itens nav-item px-3">
+						<a class="nav-link fs-5" href="/destinos">Destinos</a>
+					</li>
+					<li class="itens nav-item px-3">
+						<a class="nav-link fs-5" href="/promocoes">Promoções</a>
+					</li>
+					<li class="itens nav-item px-3">
+						<a class="nav-link fs-5" href="/contato">Contato</a>
+					</li>
 				</ul>
 			</div>
+		</div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-        </nav>
-
-        <div class="espaco"></div>
-
-        <nav class="nav nav-item bg-white navbar-expand-lg navbar-light mb-1 border-bottom">
-            <div class="container-fluid ">
-
-                <div class=" collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="itens nav-item px-3">
-                            <a class="nav-link fs-5" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="itens nav-item px-3">
-                            <a class="nav-link fs-5" href="destinos">Destinos</a>
-                        </li>
-                        <li class="itens nav-item px-3">
-                            <a class="nav-link fs-5" href="promocoes">Promoções</a>
-                        </li>
-                        <li class="itens nav-item px-3">
-                            <a class="nav-link fs-5" href="contato">Contato</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-
-        </nav>
-        <!-- Fim do navbar -->
+	</nav>
+	<!-- Fim do navbar -->
 
         <!-- banner -->
-        <div class="row banner my-3 justify-content-around">
+        <div class="row banner my-5 justify-content-around">
             <div class="col-12 col-md-7 banner align-items-center d-flex ">
                 <div class="texto col-12 mx-4">
                     <h1 class="mb-4">Como podemos te ajudar?</h1>

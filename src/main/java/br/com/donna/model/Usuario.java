@@ -1,5 +1,6 @@
 package br.com.donna.model;
 
+import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.CascadeType;
@@ -28,26 +29,11 @@ public class Usuario {
 	@Column(nullable = false)
 	private String senha;
 	
-	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_permissao", nullable = false)
-    private Permissao permissao;
-	
+
 	@OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_cliente", nullable = false)
     private Cliente cliente;
 	
-	public Usuario() {
-		
-	}
-
-	public Usuario(int id, String email, String senha, Permissao permissao, Cliente cliente) {
-		this.id = id;
-		this.email = email;
-		this.senha = senha;
-		this.permissao = permissao;
-		this.cliente = cliente;
-	}
-
 	public int getId() {
 		return id;
 	}
@@ -72,14 +58,6 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public Permissao getPermissao() {
-		return permissao;
-	}
-
-	public void setPermissao(Permissao permissao) {
-		this.permissao = permissao;
-	}
-
 	public Cliente getCliente() {
 		return cliente;
 	}
@@ -90,7 +68,7 @@ public class Usuario {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(cliente, email, id, permissao, senha);
+		return Objects.hash(cliente, email, id, senha);
 	}
 
 	@Override
@@ -103,12 +81,12 @@ public class Usuario {
 			return false;
 		Usuario other = (Usuario) obj;
 		return Objects.equals(cliente, other.cliente) && Objects.equals(email, other.email) && id == other.id
-				&& Objects.equals(permissao, other.permissao) && Objects.equals(senha, other.senha);
+				 && Objects.equals(senha, other.senha);
 	}
 
 	@Override
 	public String toString() {
-		return "Usuario [id=" + id + ", email=" + email + ", senha=" + senha + ", permissao=" + permissao + ", cliente="
+		return "Usuario [id=" + id + ", email=" + email + ", senha=" + senha +  ", cliente="
 				+ cliente + "]";
 	}
 

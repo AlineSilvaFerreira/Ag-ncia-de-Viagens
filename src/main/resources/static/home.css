@@ -28,6 +28,7 @@ section{
 
 .login h3{
     color: #d43953;
+    margin: 0 0 30px 0 ;
 }
 
 .login .btnRedes {
@@ -40,6 +41,8 @@ section{
 }
 
 .login .btnEntrar{
+	color: white;
+	margin:30px 0 0 0 ;
     background-color: #1a889e;
     border: none;
  }
@@ -55,6 +58,7 @@ section{
 .fundoBusca{
     height: 200px;
     align-items: center;
+    margin: 5px;
 }
 
 .busca{
@@ -62,6 +66,7 @@ section{
     height: 80%;
     border-radius: 10px;
     padding: 10px 40px;
+    
 }
 
 .busca h4{      
@@ -86,7 +91,9 @@ section{
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 5px 30px;    
+    padding: 5px 30px;
+    margin: 30px 0 ;   
+     
 }
 
 .promocao p{
@@ -102,6 +109,7 @@ section{
     height: 32%;
     width: 100%;
     justify-content: center;
+    margin: 40px;
 }
 
 .primeira >.destinos{
@@ -150,8 +158,8 @@ section{
 }
 
 .atendimento{
-    margin-bottom: 10px;
-    height: 30%;
+    margin-bottom: 20px;
+    height: 200px;
     display: flex;   
     align-items: center;
     background-color: #e4e4e4;
@@ -175,15 +183,14 @@ section{
     color:black;
 }   
 
-.atendimento > .imagem{
-    width: 60%;
+.atendimento > .imagem{    
     float: left;
 }
   
 
 .formOfertas{
-    border: 2px solid #ce183656;
-    margin: 0 20px;   
+    border: 2px solid rgb(215, 215, 215);
+    margin: 30px 20px;   
     width: 100%;
     height: 150px;
     display: flex;
@@ -229,7 +236,7 @@ footer a{
 @media screen and (max-width: 550px) {
     .conteudo{
         display:flex;
-        height: 1600px;  
+         
     }
 
     .fundoBusca{
@@ -238,13 +245,15 @@ footer a{
 
     .busca{
         width: 98%;
-        height: 97%;        
+        height: 97%;   
+            
     }
 
     .promocao{
         width: 98%;
         height: 7%; 
-        align-items: center;       
+        align-items: center;    
+        
     }
 
     .promocao p{
@@ -258,6 +267,7 @@ footer a{
     .primeira{
         height: 21%;
         align-content: space-between;
+        
     }
     
     .primeira >.destinos{

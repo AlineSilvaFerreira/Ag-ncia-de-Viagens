@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -26,6 +27,9 @@ public class Pacote {
 	
 	@Column(nullable = false)
 	private int desconto;
+	
+	@Lob
+	private byte[] imagem;
 	
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	@JoinColumn(name = "id_hospedagem",nullable = false)
@@ -88,6 +92,13 @@ public class Pacote {
 		this.voo = voo;
 	}
 	
+	public byte[] getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(byte[] imagem) {
+		this.imagem = imagem;
+	}
 	
 	public double calcularPromocao() {
 		double valorFinal = this.valor - (this.valor / 100 * this.desconto);
