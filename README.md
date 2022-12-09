@@ -1,17 +1,9 @@
 # Agencia-de-Viagens
-Projeto Prático Individual - Recode Pro
+**Projeto Prático Individual - Formação Full Stack Recode Pro 2022.**
 
-Primeira entrega 
-- HTML
-- CSS
-- Bootstrap
+### Donna Agência de Viagens 
+![home](imgs-github/home.png)
 
-Segunda entrega 
-- Banco de dados relacional
-- Banco de dados físico usando SQL
-- Diagrama de classes UML
-- Classes e CRUD Java
 
-:link: https://donna-agencia-de-viagens.herokuapp.com/
 
 
